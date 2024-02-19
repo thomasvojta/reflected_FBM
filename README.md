@@ -9,6 +9,7 @@ This project contains Fortran 90 code to simualate discrete-time reflected fract
 - two-dimensional circular sector
 - three-dimensional sphere
 - three-dimensional spherical cone
+  
 The programs compute general characteristics such as the mean-square displacement. They also compute the spatial probability density of the random walkers. Several ways of implementing the reflection condition are implemented (hard and soft walls), see Phys. Rev. E 102, 032108 (2020), [https://doi.org/10.1103/PhysRevE.102.032108](https://doi.org/10.1103/PhysRevE.102.032108) for a detailed discussion. 
 
 The increments (steps) of the discrete-time FBM process, i.e., the fractional Gaussian noise, are created using the effective Fourier-filtering technique, allowing one to simulate long trajectories up to 2^27 (about 134 million) time steps. The code uses Ooura's FFT package, [https://github.com/biotrump/OouraFFT](https://github.com/biotrump/OouraFFT), to perform the Fourier transformations. Conditional compilation using preprocessor directives is used to allow the same code to run serially (non-parallel) or in parallel using MPI.
