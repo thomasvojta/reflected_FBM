@@ -1,7 +1,6 @@
 # reflected_FBM
-code to simulate reflected fractional Brownian motion in different geometries
 
-This project contains Fortran 90 code to simualate discrete-time reflected fractional Brownian motion (FBM) in one, two, and three dimension. Geometries inlude:
+This project contains Fortran 90 code to simualate discrete-time reflected fractional Brownian motion (FBM) in one, two, and three dimension. FBM is characterized by the decay exponent gamma (gamma is related to the Hurst exponent via gamma = 2-2H). Geometries inlude:
 - semi-infinite one-dimensional interval
 - finite one-dimensional interval
 - two-dimensional square
